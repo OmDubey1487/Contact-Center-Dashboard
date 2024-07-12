@@ -1,0 +1,32 @@
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 0 3px  #c0c0c0;
+    border-radius: 8px;
+}
+
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-pink {
+    background-color: #ffefe7;
+}
+
+.bg-light-blue {
+    background-color: #e8f0fb;
+}
+
+.bg-dark-blue {
+    background-color: #07215d;
+}
+
+.bg-blue {
+    background-color: #0c2765;
+}
+
+.bg-purple {
+    background-color: #fdebf9;
+}

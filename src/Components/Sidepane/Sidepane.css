@@ -4,4 +4,28 @@
     width: 100px;
     position: fixed;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sidepane > ul {
+    list-style: none;
+}
+
+.sidepane > ul > * {
+    margin: 20px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.sidepane-icon {
+    width: 30px;
+}
+
+#sidepane-text {
+    color: #b3b3b3;
 }

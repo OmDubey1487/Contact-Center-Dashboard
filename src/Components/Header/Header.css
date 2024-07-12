@@ -1,5 +1,21 @@
 .header {
-    height: 60px;
-    border-radius: 20px;
+    height: 50px;
+    border-radius: 8px;
     background-color: #f7f9fa;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.dropdown-icon {
+    width: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.profile-photo {
+    width: 30px;
+    border-radius: 100%;
 }
