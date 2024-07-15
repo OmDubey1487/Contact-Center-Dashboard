@@ -1,0 +1,11 @@
+{
+    "overall_call_stats": {
+        "total": 856,
+        "average_duration": 420
+    },
+    "follow-up_calls": {
+        "open": 16,
+        "pending": 4,
+        "closed": 42
+    }
+}

@@ -1,7 +1,11 @@
 import './Body.css'
 import Header from '../Header/Header'
 import Card from '../Cards/Card'
+import Table from '../Table/Table'
 import { useEffect, useRef, useState } from 'react'
+import statsData from '../../data/call-stats-data.json'
+
+const stats = JSON.parse (JSON.stringify (statsData))
 
 const Body = () => {
     const [clickedOption, setClickedOption] = useState (1);
@@ -29,7 +33,13 @@ const Body = () => {
                         <span>OverallCall Stats:</span>
                         <ul className="info-cards">
                             <li>
-                                <Card width="15vw" height="10vw" ></Card>
+                                <Card width="15vw" height="10vw" >
+                                    {/* <div className="left-border">
+                                        <span>Total no. of Calls</span>
+                                        <span>{stats["overall_call_stats"].total}</span>
+                                    </div>
+                                    <span>Analyzed</span> */}
+                                </Card>
                             </li>
                             <li>
                                 <Card width="15vw" height="10vw"></Card>
@@ -52,6 +62,12 @@ const Body = () => {
                     </div>
 
                 </div>
+                <div className="search">
+                    <span>Advance Search</span>
+                    <input type="search" placeholder='Agent Name, Call status,' id='inputSearch' ></input>
+                    <button id='searchBtn'>Search</button>
+                </div>
+                <Table />
             </div>
             <div className='secondary'>
                 {/* <Card width="90%" height="40vh">
