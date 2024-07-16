@@ -20,6 +20,7 @@ tbody>* {
 tbody>*>* {
     border-bottom: 2px solid #ebebeb;
     padding: 0 10px;
+    font-size: smaller;
 }
 
 thead>* {
@@ -58,4 +59,25 @@ thead>*>* {
 
 table a {
     color: #005bd3;
+}
+
+.status-label {
+    padding: 2px 6px;
+    border-radius: 10px;
+    text-wrap: nowrap;
+}
+
+.status-open {
+    background-color: #fedad9;
+    color: #8e1f0b;
+}
+
+.status-closed {
+    color: #105000;
+    background-color: #96ff7b;
+}
+
+.status-in-progress {
+    background-color: #ffef9d;
+    color: #4f4700;
 }

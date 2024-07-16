@@ -3,7 +3,10 @@ import SortLabel from './SortLabel'
 import Search from './Search'
 import callData from '../../data/call-data.json'
 import { useSortableTable } from '../../helper/useSortedTable'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import CommonUtils from '../../helper/utils'
+
+const { capitalizeWords } = CommonUtils
 
 const parsedCallData = JSON.parse(JSON.stringify(callData))
 
@@ -91,14 +94,14 @@ const Table = () => {
                             return (
                             <tr key={index}>
                                 <td>{call.memberId}</td>
-                                <td>{call.mem_name}</td>
+                                <td>{capitalizeWords (call.mem_name)}</td>
                                 <td> <div className="date-rectangle">{call.date}</div> </td>
-                                <td>{call.category}</td>
-                                <td>{call.severity}</td>
+                                <td>{capitalizeWords (call.category)}</td>
+                                <td>{capitalizeWords (call.severity)}</td>
                                 <td><a href={call.report_link} target='blank'>Details</a></td>
-                                <td><span className={`status-label status-${call.status}`}>{call.status}</span></td>
+                                <td><span className={`status-label status-${call.status.toLowerCase()}`}>{capitalizeWords (call.status)}</span></td>
                                 <td><a href={call.work_on}>Work</a></td>
-                                <td>{call.owner}</td>
+                                <td>{capitalizeWords (call.owner)}</td>
                             </tr>
                         )})
                     }

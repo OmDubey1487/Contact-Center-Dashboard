@@ -1,22 +1,29 @@
 .card {
-    width: 100px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    /* height: auto; */
+    display: flex;
+    flex-direction: column;
     background-color: white;
     box-shadow: 0 0 3px  #c0c0c0;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 
 .bg-white {
     background-color: #ffffff;
+    color: #949494;
 }
 
 .bg-pink {
     background-color: #ffefe7;
+    color: #ff5151;
 }
 
 .bg-light-blue {
     background-color: #e8f0fb;
+    color: #3786f1;
 }
 
 .bg-dark-blue {
@@ -25,8 +32,10 @@
 
 .bg-blue {
     background-color: #0c2765;
+    color: #ffffff;
 }
 
 .bg-purple {
     background-color: #fdebf9;
+    color: #ee61cf;
 }

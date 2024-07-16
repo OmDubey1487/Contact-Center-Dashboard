@@ -17,7 +17,7 @@
         "category": "unfrozen meal",
         "severity": "high",
         "report_link": "#",
-        "status": "in_progress",
+        "status": "in-progress",
         "work_on": "#",
         "owner": "none"
     },
@@ -33,14 +33,14 @@
         "owner": "none"
     },
     {
-        "memberId": "CC501",
-        "mem_name": "Jesse M",
-        "date": "10/7/2023",
+        "memberId": "CC555",
+        "mem_name": "Mary Lannister",
+        "date": "4/17/2023",
         "category": "escalation",
-        "severity": "high",
+        "severity": "low",
         "report_link": "#",
-        "status": "open",
+        "status": "closed",
         "work_on": "#",
         "owner": "none"
-    }    
+    } 
 ]
